@@ -1,5 +1,5 @@
 body{
-    background-color:#9ccfd8;
+    background-color:#e0def4;
 }
 
 .Navigation_Bar h1, ul{
@@ -15,11 +15,12 @@ body{
 .Navigation_Bar h1, a{
     text-decoration: none;
     padding: 10px;
+    color:#31748f;
 }
 
 h1{
     font-family: 'Quicksand', sans-serif;
-    color:#6e6a86
+    color:#31748f;
 }
 
 footer{
@@ -34,5 +35,14 @@ footer{
 
 p{
     font-family: 'Karma', serif;  
-    color: #6e6a86;
+    color:#191724;
 }
+
+.new_note{
+    position: relative;
+    left: 200px;
+    top:50px;
+    font-family: 'Karma', serif;  
+    color:#191724;
+}
+
