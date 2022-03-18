@@ -2,8 +2,37 @@ body{
     background-color:#9ccfd8;
 }
 
-h1 ul{
+.Navigation_Bar h1, ul{
     display: flex;
     flex-direction:row;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    text-decoration: none;
+    list-style: none;
+    text-align: right;
+    font-size:large;
+}
+
+.Navigation_Bar h1, a{
+    text-decoration: none;
+    padding: 10px;
+}
+
+h1{
+    font-family: 'Quicksand', sans-serif;
+    color:#6e6a86
+}
+
+footer{
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    text-align: center;
+    padding-top:40px;
+
+}
+
+p{
+    font-family: 'Karma', serif;  
+    color: #6e6a86;
 }
