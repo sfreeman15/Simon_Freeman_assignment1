@@ -1,5 +1,5 @@
 body{
-    background-color:#e0def4;
+    background-color:#f2e9e1;
 }
 
 .Navigation_Bar h1, ul{
@@ -17,6 +17,9 @@ body{
     padding: 10px;
     color:#31748f;
 }
+.Navigation_Bar a:hover{
+    color:#191724;
+}
 
 h1{
     font-family: 'Quicksand', sans-serif;
@@ -30,19 +33,115 @@ footer{
     right:0;
     text-align: center;
     padding-top:40px;
+    color:#31748f;
+
 
 }
 
 p{
     font-family: 'Karma', serif;  
-    color:#191724;
+}
+
+.sidenav{
+   width:auto;
+
 }
 
 .new_note{
-    position: relative;
-    left: 200px;
-    top:50px;
+    position: absolute;
+    left: 400px;
     font-family: 'Karma', serif;  
+    color:#191724;
+    background-color: transparent;
+    outline:none;
+    border: none;
+    font-size: x-large;
+    color: #31748f;
+}
+
+.new_note:hover{
+    color:#191724
+}
+textarea{
+    position: relative;
+    left: 425px;
+    top:10px;
+    height:150px;
+    background-color: #fffaf3;
+    border:none;
+    font-family: 'Karma', serif; 
+    color:#9893a5;
+}
+
+.slide_out_button{
+    position:relative;
+    background-color: transparent;
+    outline:none;
+    border: none;
+    font-size: x-large;
+    color: #31748f;
+    bottom:100px;
+
+}
+.slide_out_button:hover{
+    color:#191724;
+}
+.slide_in_button{
+    position:relative;
+    background-color: transparent;
+    outline:none;
+    border: none;
+    font-size: x-large;
+    color: #31748f;
+    bottom:100px;
+    
+}
+.slide_in_button:hover{
     color:#191724;
 }
 
+.sidenav{
+
+}
+
+.sidenav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+    width:33%;
+    list-style-type: none;   
+}
+
+.save{
+    position: absolute;
+    left: 550px;
+    bottom:150px;
+    font-family: 'Karma', serif;  
+    color:#191724;
+    background-color: transparent;
+    outline:none;
+    border: none;
+    font-size: medium;
+    color: #31748f;
+}
+
+.delete{
+    position: absolute;
+    left: 600px;
+    bottom:150px;
+    font-family: 'Karma', serif;  
+    color:#eb6f92;
+    background-color: transparent;
+    outline:none;
+    border: none;
+    font-size: medium;
+}
+
+.save:hover{
+    color:#191724
+}
+
+.delete:hover{
+    color:#191724
+}

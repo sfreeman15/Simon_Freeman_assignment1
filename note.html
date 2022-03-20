@@ -11,21 +11,44 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <nav class = "Navigation Bar">
+    <nav class ="Navigation_Bar">
         <h1> 
         <ul>
             <li> <a href="#">About</a></li>
             <li>  <a href="#">Docs</a></li>
         </ul>
         </h1>
+    <nav class="sidenav">
+        <button class="slide_in_button"
+        type="button">
+        <<
+        </button>
+        <ul>
+            <li><a href="#"> my notes</a></li>
+            <li><a href="#"> note one</a></li>
+            <li><a href="#"> note two</a></li>
+
+        </ul>
     </nav>
     <button class="new_note"
         type="button">
-    Create a new note
+    +
+    </button>
+<textarea id="story" name="story"
+    rows="5" cols="33">
+your note here
+</textarea>
+    <button class="save"
+            type="button">
+    save
+    </button>
+    <button class="delete"
+    type="button">
+    delete
     </button>
     <footer>
         <p>
-            Created by Simon Freemaj
+            Created by Simon Freeman
         </p>
     </footer>
 </body> 
