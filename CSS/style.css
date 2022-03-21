@@ -66,11 +66,13 @@ textarea{
     position: relative;
     left: 425px;
     top:10px;
-    height:150px;
+    width: 300px;
+    height:200px;
     background-color: #fffaf3;
     border:none;
     font-family: 'Karma', serif; 
     color:#9893a5;
+    resize: none;
 }
 
 .slide_out_button{
@@ -86,23 +88,12 @@ textarea{
 .slide_out_button:hover{
     color:#191724;
 }
-.slide_in_button{
-    position:relative;
-    background-color: transparent;
-    outline:none;
-    border: none;
-    font-size: x-large;
-    color: #31748f;
-    bottom:100px;
-    
-}
+
 .slide_in_button:hover{
     color:#191724;
 }
 
-.sidenav{
 
-}
 
 .sidenav ul{
     display: flex;
@@ -115,8 +106,8 @@ textarea{
 
 .save{
     position: absolute;
-    left: 550px;
-    bottom:150px;
+    left: 630px;
+    bottom:230px;
     font-family: 'Karma', serif;  
     color:#191724;
     background-color: transparent;
@@ -128,8 +119,8 @@ textarea{
 
 .delete{
     position: absolute;
-    left: 600px;
-    bottom:150px;
+    left: 680px;
+    bottom:230px;
     font-family: 'Karma', serif;  
     color:#eb6f92;
     background-color: transparent;
@@ -137,11 +128,56 @@ textarea{
     border: none;
     font-size: medium;
 }
-
 .save:hover{
-    color:#191724
+    color:#191724;
 }
 
 .delete:hover{
-    color:#191724
+    color:#191724;
+}
+
+.sidelist{
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #fffaf3;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    color: #31748f;
+    font-family: 'Karma', serif;  
+
+}
+
+.sidelist ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+    width:100%;
+    list-style-type: none;
+    
+}
+
+.sidelist li{
+    margin-top: 20%;
+
+}
+
+.my_notes{
+    color:#191724;
+}
+
+.slide_in_button{
+    position:absolute;
+    background-color: transparent;
+    outline:none;
+    border: none;
+    font-size: x-large;
+    color: #31748f;
+    left:120px;
+
+
 }
