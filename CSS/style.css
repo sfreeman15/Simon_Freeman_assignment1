@@ -1,15 +1,9 @@
-@media screen and (width: 4800px) {
-    body {
-        color: red;
-    }
-}
-
 body{
     background-color:#f2e9e1;
     
 }
 
-.Navigation_Bar h1, ul{
+.Navigation_Bar header, ul{
     display: flex;
     flex-direction:row;
     justify-content: flex-end;
@@ -19,7 +13,7 @@ body{
     font-size:large;
 }
 
-.Navigation_Bar h1, a{
+.Navigation_Bar header, a{
     text-decoration: none;
     padding: 10px;
     color:#31748f;
@@ -28,7 +22,7 @@ body{
     color:#191724;
 }
 
-h1{
+header{
     font-family: 'Quicksand', sans-serif;
     color:#31748f;
 }
@@ -46,33 +40,26 @@ footer {
 p{
     font-family: 'Karma', serif;  
 }
-.sidenav{
-   width:auto;
-   height: 50px;
+/* .sidenav{ */
+   /* width:auto; */
+   /* height: 50px;
 }
 .sidenav ul{
     display: flex;
     justify-content: space-evenly;
     width:100%;
     list-style-type: none;
-}
-.new_note_text{
-    display: inline-flex;
-    position: absolute;
-    justify-content: space-between;
-    padding-left:400px;
+} */
+.new_note_text{ 
     font-family: 'Karma', serif;  
-    color:#191724;
     background-color: transparent;
-    outline:none;
-    border: none;
+    outline:none; 
+    border: none; 
     font-size: x-large;
     color: #31748f;
 }
 .new_note{
-    display: inline-flex;
     position: relative;
-    justify-content: center;
     font-family: 'Karma', serif;  
     color:#191724;
     background-color: transparent;
@@ -94,12 +81,22 @@ p{
     display:flex;
     flex-direction:row;
     justify-content: center;
-    align-items:center;
-    padding-right:100px;
-
+    align-items: flex-start;
+    flex-flow:row wrap;  
+    min-width: 0; 
 }
+
+.container{
+    display: flex;
+    flex-direction:column;
+}
+
+.buttons{
+    display:flex;
+    justify-content: flex-end;
+}
+
 textarea{
-    position: relative;
     width: 300px;
     height:200px;
     background-color: #fffaf3;
@@ -109,9 +106,6 @@ textarea{
     resize: none;
 }
 .save_button{
-    position: absolute;
-    padding-top:230px;
-    padding-left:120px;
     font-family: 'Karma', serif;  
     color:#191724;
     background-color: transparent;
@@ -122,9 +116,6 @@ textarea{
 }
 
 .delete{
-    position: absolute;
-    padding-top:230px;
-    padding-left:220px;
     font-family: 'Karma', serif;  
     color:#eb6f92;
     background-color: transparent;
@@ -168,6 +159,12 @@ textarea{
 }
 .my_notes{
     color:#191724;
+    font-family: 'Karma', serif; 
+}
+
+.notes{
+    color: #31748f;
+    font-family: 'Karma', serif; 
 }
 
 .slide_in_button{
@@ -177,8 +174,8 @@ textarea{
     border: none;
     font-size: x-large;
     color: #31748f;
-    padding-left:120px;
-
+    text-align: right;
+    /* left:50px; */
 }
 .slide_out_button{
     display:flex;
@@ -201,12 +198,33 @@ textarea{
 }
 
 .notes_list{
-    background-color: #fffaf3;
-    position:fixed;
+    
+    /* position:fixed; */
     display:flex;
     flex-direction: column;
     align-items:center;
-    padding:1rem 0;
-    width:5rem;
+    text-align: center;
+    padding-left:0px;
 }
 
+.sidelist{
+    display:flex;
+    flex-direction: column;
+    top:0;
+    left:0;
+    position:fixed;
+    height:100vh;
+    width: 15%;
+    background-color: #fffaf3;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        background-color:#9893a5;
+    }
+    textarea{
+        width:150px;
+        height:200px;
+    }
+    
+}

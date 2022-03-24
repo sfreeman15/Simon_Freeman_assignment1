@@ -11,40 +11,43 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
+    <header> 
     <nav class ="Navigation_Bar">
-        <h1> 
         <ul>
             <li> <a href="#">About</a></li>
             <li>  <a href="#">Docs</a></li>
         </ul>
-        </h1>
-    <div class="sidelist">
+    </header>
+    <nav class="sidelist">
         <button class="slide_in_button"
         type="button">
         <<
         </button>
-        <ul>
+        <ul class = notes_list>
             <li class ="my_notes">my notes</li>
-            <li>note one</li>
-            <li>note two</li>
+            <li class = "notes">note one</li>
+            <li class = "notes">note two</li>
         </ul>
-    </div>
-    <button class="new_note"
+    </nav>
+    <section class="textarea_button">
+        <button class="new_note_text"
         type="button">
-    +
-    </button>
-<textarea id="story" name="story"
-    rows="5" cols="33">
-your note here
-</textarea>
-    <button class="save"
-            type="button">
-    save
-    </button>
-    <button class="delete"
-    type="button">
-    delete
-    </button>
+        +
+        </button>
+        <section class="container">
+            <textarea id="story" name="story"
+            rows="5" cols="33">your note here
+            </textarea>
+            <section class ="buttons">
+                <button class="save_button"type="button">
+                save
+                </button>
+                <button class="delete" type="button">
+                delete
+                </button>
+            </section>
+        </section>
+    </section>
     <footer>
         <p>
             Created by Simon Freeman
