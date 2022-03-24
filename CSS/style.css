@@ -1,5 +1,12 @@
+@media screen and (width: 4800px) {
+    body {
+        color: red;
+    }
+}
+
 body{
     background-color:#f2e9e1;
+    
 }
 
 .Navigation_Bar h1, ul{
@@ -26,30 +33,34 @@ h1{
     color:#31748f;
 }
 
-footer{
-    position: absolute;
-    bottom:0;
-    left:0;
-    right:0;
-    text-align: center;
-    padding-top:40px;
+footer {
     color:#31748f;
-
-
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    width:100%;
+  }
 
 p{
     font-family: 'Karma', serif;  
 }
-
 .sidenav{
    width:auto;
-
+   height: 50px;
 }
-
-.new_note{
+.sidenav ul{
+    display: flex;
+    justify-content: space-evenly;
+    width:100%;
+    list-style-type: none;
+}
+.new_note_text{
+    display: inline-flex;
     position: absolute;
-    left: 400px;
+    justify-content: space-between;
+    padding-left:400px;
     font-family: 'Karma', serif;  
     color:#191724;
     background-color: transparent;
@@ -58,14 +69,37 @@ p{
     font-size: x-large;
     color: #31748f;
 }
+.new_note{
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    font-family: 'Karma', serif;  
+    color:#191724;
+    background-color: transparent;
+    outline:none;
+    border: none;
+    font-size: x-large;
+    color: #31748f;
+    width:100%;
+}
 
 .new_note:hover{
     color:#191724
 }
+.new_note_text:hover{
+    color:#191724
+}
+
+.textarea_button{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+    padding-right:100px;
+
+}
 textarea{
     position: relative;
-    left: 425px;
-    top:10px;
     width: 300px;
     height:200px;
     background-color: #fffaf3;
@@ -74,40 +108,10 @@ textarea{
     color:#9893a5;
     resize: none;
 }
-
-.slide_out_button{
-    position:relative;
-    background-color: transparent;
-    outline:none;
-    border: none;
-    font-size: x-large;
-    color: #31748f;
-    bottom:100px;
-
-}
-.slide_out_button:hover{
-    color:#191724;
-}
-
-.slide_in_button:hover{
-    color:#191724;
-}
-
-
-
-.sidenav ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: left;
-    width:33%;
-    list-style-type: none;   
-}
-
-.save{
+.save_button{
     position: absolute;
-    left: 630px;
-    bottom:230px;
+    padding-top:230px;
+    padding-left:120px;
     font-family: 'Karma', serif;  
     color:#191724;
     background-color: transparent;
@@ -119,8 +123,8 @@ textarea{
 
 .delete{
     position: absolute;
-    left: 680px;
-    bottom:230px;
+    padding-top:230px;
+    padding-left:220px;
     font-family: 'Karma', serif;  
     color:#eb6f92;
     background-color: transparent;
@@ -128,7 +132,7 @@ textarea{
     border: none;
     font-size: medium;
 }
-.save:hover{
+.save_button:hover{
     color:#191724;
 }
 
@@ -136,48 +140,73 @@ textarea{
     color:#191724;
 }
 
-.sidelist{
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 160px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+.menu{
+    height: 100%; 
+    width: 50; 
+    position: fixed;
+    top: 0; 
     left: 0;
     background-color: #fffaf3;
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
-    color: #31748f;
-    font-family: 'Karma', serif;  
-
+     
 }
 
-.sidelist ul{
+.menu ul{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     text-align: left;
     width:100%;
-    list-style-type: none;
-    
+    list-style-type: none; 
 }
 
-.sidelist li{
+.menu li{
+    color: #31748f;
     margin-top: 20%;
+    display:flex;
+    flex-direction:column;
 
 }
-
 .my_notes{
     color:#191724;
 }
 
 .slide_in_button{
-    position:absolute;
+    position:relative;
     background-color: transparent;
     outline:none;
     border: none;
     font-size: x-large;
     color: #31748f;
-    left:120px;
-
+    padding-left:120px;
 
 }
+.slide_out_button{
+    display:flex;
+    position:relative;
+    background-color: transparent;
+    outline:none;
+    border: none;
+    font-size: x-large;
+    color: #31748f;
+    padding-bottom:100px;
+    
+
+}
+.slide_out_button:hover{
+    color:#191724;
+}
+
+.slide_in_button:hover{
+    color:#191724;
+}
+
+.notes_list{
+    background-color: #fffaf3;
+    position:fixed;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    padding:1rem 0;
+    width:5rem;
+}
+
