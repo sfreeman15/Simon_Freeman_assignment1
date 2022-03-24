@@ -220,11 +220,16 @@ textarea{
 
 @media screen and (max-width: 480px) {
     body {
-        background-color:#9893a5;
+        background-color:#fffaf3;
     }
     textarea{
         width:150px;
         height:200px;
+        background-color:#f2e9e1;
+    }
+    
+    .sidelist{
+        background-color:#f2e9e1;
     }
     
 }
