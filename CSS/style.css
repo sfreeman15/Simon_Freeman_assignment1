@@ -1,6 +1,5 @@
 body{
-    background-color:#f2e9e1;
-    
+    background-color:#f2e9e1;   
 }
 
 .Navigation_Bar header, ul{
@@ -40,16 +39,7 @@ footer {
 p{
     font-family: 'Karma', serif;  
 }
-/* .sidenav{ */
-   /* width:auto; */
-   /* height: 50px;
-}
-.sidenav ul{
-    display: flex;
-    justify-content: space-evenly;
-    width:100%;
-    list-style-type: none;
-} */
+
 .new_note_text{ 
     font-family: 'Karma', serif;  
     background-color: transparent;
@@ -86,7 +76,7 @@ p{
     min-width: 0; 
 }
 
-.container{
+.text_area_container{
     display: flex;
     flex-direction:column;
 }
@@ -131,32 +121,6 @@ textarea{
     color:#191724;
 }
 
-.menu{
-    height: 100%; 
-    width: 50; 
-    position: fixed;
-    top: 0; 
-    left: 0;
-    background-color: #fffaf3;
-     
-}
-
-.menu ul{
-    display: flex;
-    flex-direction: column;
-    justify-content:space-evenly;
-    text-align: left;
-    width:100%;
-    list-style-type: none; 
-}
-
-.menu li{
-    color: #31748f;
-    margin-top: 20%;
-    display:flex;
-    flex-direction:column;
-
-}
 .my_notes{
     color:#191724;
     font-family: 'Karma', serif; 
@@ -207,7 +171,7 @@ textarea{
     padding-left:0px;
 }
 
-.sidelist{
+.sidemenu{
     display:flex;
     flex-direction: column;
     top:0;
@@ -228,7 +192,7 @@ textarea{
         background-color:#f2e9e1;
     }
     
-    .sidelist{
+    .sidemenu{
         background-color:#f2e9e1;
     }
     
